@@ -22,3 +22,4 @@ form.addEventListener('submit', async event => {
     console.error('Ошибка загрузки изображений:', error);
   }
 });
+<script type="module" src="./js/pixabay-api.js"></script>;
