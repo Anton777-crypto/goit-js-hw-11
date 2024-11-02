@@ -6,7 +6,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 // pixabay-api.js
 import axios from 'axios';
 
-const API_KEY = 'ВАШ_API_KEY'; // Вставьте свой ключ API от Pixabay
+const API_KEY = '46834340-89d4e2966326dbab6749c20a4';
 const BASE_URL = 'https://pixabay.com/api/';
 
 export async function fetchImages(query, page = 1, perPage = 12) {
