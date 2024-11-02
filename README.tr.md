@@ -113,13 +113,3 @@ bayrağının yanlış bir değeri vardır.
 3. Eğer tüm adımlar başarılı bir şekilde tamamlanırsa, proje dosyalarının
    üretime hazır sürümü `gh-pages` dalına gönderilir. Aksi takdirde, komut
    dosyası çalıştırma günlüğünde sorunun ne olduğu belirtilir.
-
-// const API_KEY = '46834340-89d4e2966326dbab6749c20a4'; // const BASE_URL =
-'https://pixabay.com/api/';
-
-// export async function fetchImages(query, page = 1, perPage = 12) { // try {
-// const response = await axios.get(BASE_URL, { // params: { // key: API_KEY, //
-q: query, // image_type: 'photo', // orientation: 'horizontal', // safesearch:
-true, // page: page, // per_page: perPage, // }, // }); // return response.data;
-// } catch (error) { // console.log('Ошибка запроса:', error); // throw error;
-// } // }
