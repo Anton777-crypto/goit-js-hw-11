@@ -24,7 +24,7 @@ export async function fetchImages(query, page = 1, perPage = 12) {
     });
     return response.data;
   } catch (error) {
-    console.error('Ошибка запроса:', error);
+    console.log('Ошибка запроса:', error);
     throw error;
   }
 }
