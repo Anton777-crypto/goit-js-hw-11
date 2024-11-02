@@ -28,8 +28,9 @@ export async function fetchImages(query, page = 1, prePage = 12) {
       title: 'Помилка',
       message:
         '"Sorry, there are no images matching your search query. Please try again!"',
-      position: 'center',
+      position: 'topCenter',
       maxWidth: '250px ',
+      color: 'rgb(255, 162, 0)',
     });
   }
 }
