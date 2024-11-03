@@ -1,4 +1,4 @@
-render - functions.js;
+// render - functions.js;
 
 export function renderImages(images) {
   const gallery = document.querySelector('.gallery');
