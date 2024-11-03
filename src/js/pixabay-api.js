@@ -24,7 +24,7 @@ export async function fetchImages(query, page = 1, prePage = 12) {
     });
     return restor.data;
   } catch (error) {
-    console.log('Ошибка запроса', error);
+    // console.log('Ошибка запроса', error);
     iziToast.error({
       title: 'Помилка',
       message:
