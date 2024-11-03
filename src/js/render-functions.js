@@ -20,4 +20,4 @@
 
 // export function clearGallery() {
 //   document.querySelector('.gallery').innerHTML = '';
-}
+// }
