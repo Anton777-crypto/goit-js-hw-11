@@ -7,11 +7,11 @@ import 'izitoast/dist/css/iziToast.min.css';
 import axios from 'axios';
 
 const KEY = '46834340-89d4e2966326dbab6749c20a4';
-const URL = 'http://pixabay.com/api/';
+const BAZ_URL = 'http://pixabay.com/api/';
 
 export async function fetchImages(query, page = 1, prePage = 12) {
   try {
-    const restor = await axios.get(URL, {
+    const restor = await axios.get(BAZ_URL, {
       params: {
         key: KEY,
         q: query,
