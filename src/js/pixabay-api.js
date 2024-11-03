@@ -11,7 +11,7 @@ const URL = 'http://pixabay.com/api/';
 
 export async function fetchImages(query, page = 1, prePage = 12) {
   try {
-    const send = await axios.get(URL, {
+    const restor = await axios.get(URL, {
       params: {
         key: KEY,
         q: query,
@@ -22,7 +22,7 @@ export async function fetchImages(query, page = 1, prePage = 12) {
         pre_Page: prePage,
       },
     });
-    return send.data;
+    return restor.data;
   } catch (error) {
     console.log('Ошибка запроса', error);
     iziToast.error({
