@@ -12,5 +12,5 @@ import{a as l,i}from"./assets/vendor-DlDx-2bX.js";(function(){const o=document.c
              </div>
              </li>
            </ul>
-         </div>`).join("");o.innerHTML=s}function y(){document.querySelector(".gallery").innerHTML=""}const g=document.querySelector("#search-form"),f=document.querySelector("#search-input");let c=1;const h=12;g.addEventListener("submit",async a=>{a.preventDefault();const o=f.value.trim();if(!o){iziToast.error({title:"Error",message:"Sorry, You have not entered anything. Please check your entry.",position:"center",maxWidth:"250px ",color:"rgb(255, 162, 0)"});return}c=1,y();try{const s=await d(o,c,h);console.log(s),m(s)}catch(s){console.log("Ошибка загрузки изображений:",s)}});
+         </div>`).join("");o.innerHTML=s}function y(){document.querySelector(".gallery").innerHTML=""}const g=document.querySelector("#search-form"),f=document.querySelector("#search-input");let c=1;const h=12;g.addEventListener("submit",async a=>{a.preventDefault();const o=f.value.trim();if(!o){i.error({title:"Error",message:"Sorry, You have not entered anything. Please check your entry.",position:"center",maxWidth:"250px ",color:"rgb(255, 162, 0)"});return}c=1,y();try{const s=await d(o,c,h);console.log(s),m(s)}catch(s){console.log("Ошибка загрузки изображений:",s)}});
 //# sourceMappingURL=index.js.map
