@@ -8,7 +8,6 @@ import axios from 'axios';
 
 const KEY = '46834340-89d4e2966326dbab6749c20a4';
 const BAZ_URL = 'http://pixabay.com/api/';
-const form = document.querySelector('.form');
 
 export async function fetchImages(query, page = 1, prePage = 12) {
   try {

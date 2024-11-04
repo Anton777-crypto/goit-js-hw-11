@@ -12,8 +12,8 @@ form.addEventListener('submit', async event => {
   const query = input.value.trim();
   if (!query) return;
 
-  page = 1; // Сбрасываем номер страницы при новом поиске
-  clearGallery(); // Очищаем предыдущие результаты
+  page = 1;
+  clearGallery();
 
   try {
     const data = await fetchImages(query, page, perPage);
