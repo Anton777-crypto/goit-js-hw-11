@@ -7,9 +7,9 @@ import 'izitoast/dist/css/iziToast.min.css';
 import axios from 'axios';
 
 const KEY = '46834340-89d4e2966326dbab6749c20a4';
-const BAZ_URL = 'http://pixabay.com/api/';
+const BAZ_URL = 'https://pixabay.com/api/';
 
-export async function fetchImages(query, page = 1, prePage = 12) {
+export async function fetchImages(query, page = 1, perPage = 12) {
   try {
     const response = await axios.get(BAZ_URL, {
       params: {
@@ -19,9 +19,10 @@ export async function fetchImages(query, page = 1, prePage = 12) {
         orientation: 'horizontal',
         safesearch: true,
         page: page,
-        pre_page: prePage,
+        per_page: perPage,
       },
     });
+    console.log(response.data);
 
     if (response.data.hits.length === 0) {
       iziToast.error({
@@ -35,11 +36,11 @@ export async function fetchImages(query, page = 1, prePage = 12) {
     }
     return response.data.hits;
   } catch (error) {
-    console.log('Ошибка запроса:', error);
+    console.log('Ошибка запроса:', error.response);
     iziToast.error({
       title: 'Помилка',
       message:
-        '"Sorry, there are no images matching your search query. Please try again!"',
+        'Sorry, there are no images matching your search query. Please try again!',
       position: 'center',
       maxWidth: '250px ',
       color: 'rgb(255, 162, 0)',
