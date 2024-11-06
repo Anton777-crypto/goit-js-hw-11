@@ -18,3 +18,9 @@
   background-color: aqua;
   color: red;
 }
+
+.gallery-item{
+  display: flex;
+  gap: 10px;
+  ali
+}

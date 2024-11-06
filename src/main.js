@@ -17,7 +17,8 @@ form.addEventListener('submit', async event => {
 
   try {
     const data = await fetchImages(query, page, perPage);
-    renderImages(data.hits);
+    console.log(data);
+    renderImages(data);
   } catch (error) {
     console.log('Ошибка загрузки изображений:', error);
   }

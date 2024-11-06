@@ -26,7 +26,7 @@ export async function fetchImages(query, page = 1, perPage = 12) {
 
     if (response.data.hits.length === 0) {
       iziToast.error({
-        title: 'Помилка',
+        title: 'Error',
         message:
           'Sorry, there are no images matching your search query. Please try again!',
         position: 'center',
