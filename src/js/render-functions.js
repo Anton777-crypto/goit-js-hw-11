@@ -1,10 +1,9 @@
 // render - functions.js;
 // Описаний у документації
+// Описаний у документації
 import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
-
-import simpleLightbox from 'simplelightbox';
 
 export function renderImages(images) {
   const gallery = document.querySelector('.gallery');
