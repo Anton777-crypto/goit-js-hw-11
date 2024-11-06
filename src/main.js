@@ -17,7 +17,8 @@ form.addEventListener('submit', async event => {
   if (response.data.hits.length === 0) {
     iziToast.error({
       title: 'Error',
-      message: "Sorry, but you didn't write anything.!",
+      message:
+        'Sorry, there are no images matching your search query. Please try again!',
       position: 'center',
       maxWidth: '250px ',
       color: 'rgb(255, 162, 0)',
