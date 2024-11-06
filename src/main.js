@@ -14,7 +14,15 @@ form.addEventListener('submit', async event => {
 
   page = 1;
   clearGallery();
-
+  if (response.data.hits.length === 0) {
+    iziToast.error({
+      title: 'Error',
+      message: "Sorry, but you didn't write anything.!",
+      position: 'center',
+      maxWidth: '250px ',
+      color: 'rgb(255, 162, 0)',
+    });
+  }
   try {
     const data = await fetchImages(query, page, perPage);
     console.log(data);
