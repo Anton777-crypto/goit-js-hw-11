@@ -14,7 +14,7 @@ form.addEventListener('submit', async event => {
 
   page = 1;
   clearGallery();
-  if (response.data.hits.length === 0) {
+  if (input.target.length === 0) {
     iziToast.error({
       title: 'Error',
       message:
