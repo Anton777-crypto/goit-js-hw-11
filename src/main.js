@@ -10,20 +10,20 @@ const perPage = 12;
 form.addEventListener('submit', async event => {
   event.preventDefault();
   const query = input.value.trim();
-  if (!query) return;
-
-  page = 1;
-  clearGallery();
-  if (input.target.length === 0) {
+  if (!query) {
     iziToast.error({
       title: 'Error',
-      message:
-        'Sorry, there are no images matching your search query. Please try again!',
+      message: 'Sorry, You have not entered anything. Please check your entry.',
       position: 'center',
       maxWidth: '250px ',
       color: 'rgb(255, 162, 0)',
     });
+    return;
   }
+
+  page = 1;
+  clearGallery();
+
   try {
     const data = await fetchImages(query, page, perPage);
     console.log(data);
