@@ -37,3 +37,4 @@ export function renderImages(images) {
 export function clearGallery() {
   document.querySelector('.gallery').innerHTML = '';
 }
+// 231311
