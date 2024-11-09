@@ -19,10 +19,10 @@ export function renderImages(images) {
            <img src="${image.webformatURL}" alt="${image.tags}" loading="lazy" />
            </a>
            <div class="info">
-             <p>Likes: ${image.likes}</p>
-             <p>Views: ${image.views}</p>
-             <p>Comments: ${image.comments}</p>
-             <p>Comments: ${image.downloads}</p>
+             <p><span class="info-p">Likes:</span>  ${image.likes}</p>
+             <p><span class="info-p">Views:</span> ${image.views}</p>
+             <p><span class="info-p">Comments:</span> ${image.comments}</p>
+             <p><span class="info-p">Comments:</span> ${image.downloads}</p>
 
              </div>
              </li>
