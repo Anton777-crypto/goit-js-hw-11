@@ -72,7 +72,10 @@ li {
   font-size: 14px;
   color: #555;
 }
-
+.info-info {
+  align-items: center;
+  justify-content: center;
+}
 .info-label {
   font-weight: bold;
   color: #333;
