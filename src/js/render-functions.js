@@ -33,11 +33,6 @@ export function renderImages(images) {
   gallery.innerHTML = markup;
   lightBox.refresh();
 }
-const ulgallery = document.querySelector('.ul-gallery');
-
-ulgallery.style.display = 'flex';
-ulgallery.style.gap = '10px';
-ulgallery.style.flexDirection = 'column';
 
 export function clearGallery() {
   document.querySelector('.gallery').innerHTML = '';
