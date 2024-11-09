@@ -19,8 +19,13 @@
   color: red;
 }
 
-.gallery-item{
+.gallery-item {
   display: flex;
   gap: 10px;
-  ali
+}
+
+.ul-gallery {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
