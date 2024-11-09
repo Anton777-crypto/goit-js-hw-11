@@ -75,6 +75,7 @@ li {
 .info-info {
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .info-label {
   font-weight: bold;
