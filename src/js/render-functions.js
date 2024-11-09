@@ -16,7 +16,7 @@ export function renderImages(images) {
          <ul class='ul-gallery'>
          <li class='li-gallery'>
          <a  href='${image.largeImageURL}' data-lightbox = 'gallery'>
-           <img src="${image.webformatURL}" alt="${image.tags}" loading="lazy" />
+           <img class="images" src="${image.webformatURL}" alt="${image.tags}" loading="lazy" />
            </a>
            <div class="info">
              <p><span class="info-p">Likes:</span>  ${image.likes}</p>

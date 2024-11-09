@@ -44,7 +44,7 @@
 .gallery-item img {
   width: 100%;
   height: auto;
-  display: block;
+  /* display: block; */
   border-bottom: 1px solid #ddd;
 }
 
@@ -65,7 +65,8 @@
   color: #333;
   margin-right: 4px;
 }
-
+.images {
+}
 /* Дополнительные стили для адаптивности */
 @media (max-width: 1024px) {
   .gallery-item {
