@@ -58,7 +58,7 @@ li {
 .gallery-item img {
   width: 100%;
   height: auto;
-  /* display: block; */
+
   border-bottom: 1px solid #ddd;
 }
 
