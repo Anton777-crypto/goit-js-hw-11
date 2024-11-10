@@ -67,12 +67,13 @@ li {
   padding: 8px;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .info p {
   margin: 4px 0;
   font-size: 14px;
+  font-weight: 200;
   color: #555;
 }
 .info-info {
