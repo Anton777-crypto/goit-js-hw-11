@@ -1,11 +1,13 @@
 // render - functions.js;
 
-import simpleLightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
-const lightBox = new simpleLightbox('.gallеry a', {
-  captionsData: 'alt',
-  captionDelay: 250,
+let lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt', // Подписи к изображениям берутся из атрибута alt
+  captionDelay: 250, // Задержка перед отображением подписи
+  animationSpeed: 300, // Скорость анимации при переходе
+  loop: true, // Включает циклический просмотр галереи
 });
 export function renderImages(images) {
   const gallery = document.querySelector('.gallery');
@@ -31,7 +33,7 @@ export function renderImages(images) {
     })
     .join('');
   gallery.innerHTML = markup;
-  lightBox.refresh();
+  lightbox.refresh();
 }
 
 export function clearGallery() {
