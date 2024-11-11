@@ -1,14 +1,12 @@
-// main.js
 import iziToast from 'izitoast';
-// Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
 import { fetchImages } from './js/pixabay-api';
 import { renderImages, clearGallery } from './js/render-functions';
 
-const loader = document.querySelector('.loader');
 const form = document.querySelector('#search-form');
 const input = document.querySelector('#search-input');
+const loader = document.querySelector('.loader'); // Получаем элемент загрузчика
 let page = 1;
 const perPage = 12;
 
@@ -28,6 +26,8 @@ form.addEventListener('submit', async event => {
 
   page = 1;
   clearGallery();
+
+  // Показать индикатор загрузки перед началом запроса
   loader.style.display = 'block';
 
   try {
@@ -36,5 +36,15 @@ form.addEventListener('submit', async event => {
     renderImages(data);
   } catch (error) {
     console.log('Ошибка загрузки изображений:', error);
+    iziToast.error({
+      title: 'Error',
+      message: 'Failed to load images. Please try again later.',
+      position: 'center',
+      maxWidth: '250px ',
+      color: 'rgb(255, 0, 0)',
+    });
+  } finally {
+    // Скрыть индикатор загрузки после завершения запроса
+    loader.style.display = 'none';
   }
 });
