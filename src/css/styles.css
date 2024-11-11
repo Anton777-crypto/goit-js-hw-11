@@ -29,7 +29,6 @@ li {
   color: red;
 }
 
-/* Основные стили для галереи */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +85,7 @@ li {
 }
 .images {
 }
-/* Дополнительные стили для адаптивности */
+
 @media (max-width: 1024px) {
   .gallery-item {
     width: calc(33.333% - 16px);
@@ -104,7 +103,10 @@ li {
     width: calc(100% - 16px);
   }
 }
-
+.loaderr {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+}
 .loader {
   display: none;
   font-size: 48px;
