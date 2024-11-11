@@ -11,16 +11,10 @@ let lightbox = new SimpleLightbox('.gallery a', {
 });
 
 export async function renderImages(images) {
-  const loader = document.querySelector('.loader');
   const gallery = document.querySelector('.gallery');
-
-  // Показать индикатор загрузки
-  loader.style.display = 'block';
-
-  try {
-    const markup = images
-      .map(image => {
-        return `
+  const markup = images
+    .map(image => {
+      return `
           <div class="gallery-item">
             <ul class='ul-gallery'>
               <li class='li-gallery'>
@@ -36,15 +30,12 @@ export async function renderImages(images) {
               </li>
             </ul>
           </div>`;
-      })
-      .join('');
+    })
+    .join('');
 
-    gallery.innerHTML = markup;
+  gallery.innerHTML = markup;
 
-    lightbox.refresh();
-  } finally {
-    loader.style.display = 'none';
-  }
+  lightbox.refresh();
 }
 
 export function clearGallery() {

@@ -6,6 +6,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { fetchImages } from './js/pixabay-api';
 import { renderImages, clearGallery } from './js/render-functions';
 
+const loader = document.querySelector('.loader');
 const form = document.querySelector('#search-form');
 const input = document.querySelector('#search-input');
 let page = 1;
@@ -27,6 +28,7 @@ form.addEventListener('submit', async event => {
 
   page = 1;
   clearGallery();
+  loader.style.display = 'block';
 
   try {
     const data = await fetchImages(query, page, perPage);
