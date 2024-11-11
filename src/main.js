@@ -30,6 +30,7 @@ form.addEventListener('submit', async event => {
   // Показать индикатор загрузки перед началом запроса
   loader.style.display = 'block';
   loader.after.style.display = 'block';
+  loaderr.style.display = 'block';
 
   try {
     const data = await fetchImages(query, page, perPage);
