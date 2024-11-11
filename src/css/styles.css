@@ -120,7 +120,7 @@ li {
   content: '';
   height: 4px;
   width: 0%;
-  display: block;
+
   background: #ff3d00;
   animation: 5s lineGrow linear infinite;
 }
