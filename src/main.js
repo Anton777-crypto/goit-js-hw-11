@@ -34,7 +34,7 @@ form.addEventListener('submit', async event => {
   loaderr.style.display = 'block';
   loader.style.alignItems = 'center';
   loader.style.justifyContent = 'center';
-
+  loader.style.flexDirection = 'column';
   try {
     const data = await fetchImages(query, page, perPage);
     console.log(data);
