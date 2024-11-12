@@ -6,7 +6,8 @@ import { renderImages, clearGallery } from './js/render-functions';
 
 const form = document.querySelector('#search-form');
 const input = document.querySelector('#search-input');
-const loader = document.querySelector('.loader'); // Получаем элемент загрузчика
+const loader = document.querySelector('.loader');
+const loaderr = document.querySelector('.loaderr'); // Получаем элемент загрузчика
 let page = 1;
 const perPage = 12;
 
