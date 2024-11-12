@@ -29,7 +29,7 @@ form.addEventListener('submit', async event => {
   clearGallery();
 
   // Показать индикатор загрузки перед началом запроса
-  loader.style.display = 'block';
+  loader.style.display = 'flex';
 
   loaderr.style.display = 'block';
   loader.style.alignItems = 'center';
